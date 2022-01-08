@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --titel-text-color: #ffffff;
+  --buttons-bg-color: #f5f4fa;
 }
 
 body {
@@ -128,5 +129,47 @@ body {
   background-color: #2f303a;
   color: var(--titel-text-color);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
+}
+
+.address .link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.address .link.current {
+  color: var(--accent-color);
+}
+
+/* ПОРТФОЛИО */
+
+/* Фильтр */
+.filter-list {
+  background-color: var(--buttons-bg-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-list:hover,
+.filter-list:focus {
+  background-color: var(--accent-color);
+  color: var(--titel-text-color);
+}
+
+/* Примеры работ */
+.works .titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
 }
