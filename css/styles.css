@@ -14,8 +14,8 @@ body {
 
 /* Логотип */
 .logo {
-  color: var(--primary-text-color);
-  font-family: Raleway;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -23,11 +23,12 @@ body {
 }
 
 .logo-part {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
 
 /* Навигация */
 .site-nav .link {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,6 +88,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.button:hover,
+:focus {
+  background-color: #188ce8;
+}
+
 /* Преимущества */
 .advantage-list .titel {
   font-weight: 700;
@@ -110,6 +116,10 @@ body {
 }
 
 /* Команда */
+.team-section {
+  background-color: #f5f4fa;
+}
+
 .team-list .titel {
   font-weight: 500;
   font-size: 16px;
@@ -125,20 +135,29 @@ body {
 }
 
 /* Футер */
-.address {
+.footer-section {
   background-color: #2f303a;
+}
+
+.logo-footer {
+  color: var(--buttons-bg-color);
+}
+
+.address {
   color: var(--titel-text-color);
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
 }
 
 .address .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--buttons-bg-color);
 }
 
-.address .link.current {
-  color: var(--accent-color);
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 /* ПОРТФОЛИО */
