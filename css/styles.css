@@ -180,6 +180,11 @@ body {
 }
 
 /* Примеры работ */
+.works .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
 .works .titel {
   font-weight: 700;
   font-size: 18px;
